@@ -1,9 +1,11 @@
 
 import './App.css';
-import Navbar from './component/Navbarrr/Navbar';
+import Navbar from './component/Navbar/Navbarrr/Navbar';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from './component/Navbar/Header/Header';
+
 import Login from './component/login/login';
+import NewPost from './component/Navbar/NewPost/NewPost';
+import PostImgModal from './component/PostImgModal';
 
 function App() {
   return (
@@ -16,8 +18,8 @@ function App() {
         </div>
       <Routes>
         
-        {/* <Route path="/" element={<Login />} />
-            <Route path="search"  /> */}
+        <Route path="/" element={<Login />} />
+          <Route path="newpost" element={<NewPost/>} />
        
       </Routes>
     </BrowserRouter>
